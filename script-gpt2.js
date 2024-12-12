@@ -12,10 +12,10 @@ let playerChambrePosition = { x: 90, y: 450 };
 
 // Animation configuration
 const animations = {
-    up: ['up2.png'],
-    down: ['down2.png'],
-    left: ['down2.png'],
-    right: ['down2.png']
+    up: ['up.png'],
+    down: ['down.png'],
+    left: ['left.png'],
+    right: ['right.png']
 };
 let currentAnimationFrame = 0;
 let currentDirection = 'down';
