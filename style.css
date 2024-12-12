@@ -177,6 +177,10 @@ p {
     left: 50%;
     z-index: 2;
     transform: translate(-50%, 50%);
+    cursor: pointer;
+}
+.pc:hover{
+    width: 110px;
 }
 
 .commode {
@@ -324,4 +328,46 @@ p {
         transform: translateY(-300vh);
         opacity: 0;
     }
+}
+
+/* Popup */
+
+.popup-pc{
+    display: none;
+}
+
+.popup-pc{
+    position: absolute;
+    display: none;
+    background-color: palevioletred;
+    border-radius: 10px;
+    padding: 40px;
+    z-index: 4;
+    width: 40vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.popup-pc p{
+    font-family: "Delius", cursive;
+}
+
+.popup-pc h2{
+    font-family: "Bellefair", serif;
+    margin: 0 0 10px 0;
+}
+
+.popup-pc img{
+    float: left;
+    border-radius: 10px;
+    width: 12vw;
+    margin: 0 20px;
+}
+
+.popup-pc button{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-weight: bold;
 }
