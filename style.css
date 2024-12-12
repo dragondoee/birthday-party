@@ -157,6 +157,16 @@ p {
     z-index: 1;
     transform: translate(-50%, 50%);
 }
+
+.affiche2 {
+    width: 150px;
+    position: absolute;
+    top: -105%;
+    right: 12%;
+    z-index: 1;
+    transform: translate(-50%, 50%);
+}
+
 .lit {
     width: 250px;
     position: absolute;
@@ -204,6 +214,35 @@ p {
     right: 32%;
     z-index: 1;
     transform: translate(50%, 25%);
+}
+
+.rubben{
+    width: 110px;
+    position: absolute;
+    top: -25%;
+    right: 19%;
+    z-index: 2;
+    transform: translate(50%, 25%);
+    cursor: pointer;
+}
+
+.rubben:hover{
+    width: 115px;
+}
+
+.chat {
+    width: 44px;
+    position: absolute;
+    top: -10%;
+    left: 5%;
+    z-index: 2;
+    transform: rotate(-60deg) translate(50%, 25%);
+    cursor: pointer;
+}
+
+
+.chat:hover{
+    width: 49px;
 }
 
 .pouf {
@@ -337,6 +376,7 @@ p {
 
 /* Popup */
 
+/* ---------------------------------- PC --------------------------------------- */
 .popup-pc{
     display: none;
 }
@@ -370,7 +410,51 @@ p {
     margin: 0 20px;
 }
 
-.popup-pc button{
+/* ---------------------------------- Chat --------------------------------------- */
+.popup-chat{
+    display: none;
+}
+
+.popup-chat{
+    position: absolute;
+    display: none;
+    background-color: palevioletred;
+    border-radius: 10px;
+    padding: 40px;
+    z-index: 4;
+    width: 35vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.popup-chat video{
+ width: 35vw;
+}
+
+/* ---------------------------------- Ruben --------------------------------------- */
+.popup-rubben{
+    display: none;
+}
+
+.popup-rubben{
+    position: absolute;
+    display: none;
+    background-color: palevioletred;
+    border-radius: 10px;
+    padding: 40px;
+    z-index: 4;
+    width: 25vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.popup-rubben img{
+    width: 25vw;
+}
+
+.fermer{
     position: absolute;
     right: 15px;
     top: 15px;

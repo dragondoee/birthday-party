@@ -1,23 +1,48 @@
 // Sélection des éléments HTML
 const pc = document.querySelector('.pc');
-const boutonFermer = document.querySelector('.fermer');
+const chat = document.querySelector('.chat');
+const rubben = document.querySelector('.rubben');
+const boutonsFermer = document.querySelectorAll('.fermer');
 
 const flamme = document.querySelector('.flamme');
 const compteurTexte = document.querySelector('.compteur');
 const partyTexte = document.querySelector('.party-texte');
 const compteur = document.querySelector('.compteur span');
+
 const popupPc = document.querySelector('.popup-pc');
+const popupChat = document.querySelector('.popup-chat');
+const popupRubben = document.querySelector('.popup-rubben');
 
 var index = 1
 
-// Lancer le Jeu
+// Pop-up PC
 pc.addEventListener("click", function () {
     popupPc.style.display = "block"
+    popupChat.style.display = "none"
+    popupRubben.style.display = "none"
 })
 
-boutonFermer.addEventListener("click", function () {
+// Pop-up Chat
+chat.addEventListener("click", function () {
+    popupChat.style.display = "block"
     popupPc.style.display = "none"
+    popupRubben.style.display = "none"
 })
+
+// Pop-up Rubben
+rubben.addEventListener("click", function () {
+    popupRubben.style.display = "block"
+    popupPc.style.display = "none"
+    popupChat.style.display = "none"
+})
+
+boutonsFermer.forEach(function (bouton) {
+    bouton.addEventListener("click", function () {
+        popupPc.style.display = "none";
+        popupChat.style.display = "none";
+        popupRubben.style.display = "none";
+    });
+});
 
 
 // Compteur de souffle 
