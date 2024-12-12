@@ -1,0 +1,327 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffddfd;
+}
+
+/* Typo */
+
+.delius-regular {
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.bellefair-regular {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+/* Générale */
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    background-color: palevioletred;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+    height: 50vh;
+    z-index: 1;
+}
+
+.content h1 {
+    font-size: 4rem;
+    font-family: "Berkshire Swash", serif;
+}
+
+.content button {
+    font-size: 1.3rem;
+    padding: 1vh 1.5vw;
+    margin: 2vh 0;
+    border-radius: 10px;
+}
+
+
+/* Générale */
+
+section {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+
+#chambre,
+#lab,
+#party {
+    display: none;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+/* Section Chambre */
+
+#chambre p {
+    position: relative;
+    font-family: "Delius", cursive;
+    font-size: 1.1rem;
+    background-color: palevioletred;
+    width: 450px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    top: 5px;
+    left: 5px;
+}
+
+.player {
+    position: absolute;
+    width: 110px;
+    height: 220px;
+    top: 450px;
+    left: 90px;
+    background-color: #ff5722;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.feet {
+    position: absolute;
+    width: 110px;
+    height: 40px;
+    /* Taille des pieds */
+    bottom: 0;
+    /* Place les pieds en bas */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Juste pour visualiser la zone des pieds */
+    /* display: none;  */
+}
+
+
+
+.door {
+    position: absolute;
+    width: 80px;
+    height: 160px;
+    top: 60vh;
+    right: -1px;
+    overflow: hidden;
+}
+
+.door img {
+    position: relative;
+    transform: rotate(90deg);
+    width: 160px;
+    height: auto;
+    right: 30px;
+    top: 27px;
+
+}
+
+
+
+.deco {
+    position: relative;
+    top: 52vh;
+    height: 50vh;
+    background-image: url(img/sol.jpg);
+}
+
+
+.affiche {
+    width: 150px;
+    position: absolute;
+    top: -115%;
+    left: 17%;
+    z-index: 1;
+    transform: translate(-50%, 50%);
+}
+.lit {
+    width: 250px;
+    position: absolute;
+    bottom: 100%;
+    z-index: 1;
+    transform: translate(0, 50%);
+}
+
+.plante {
+    width: 150px;
+    position: absolute;
+    bottom: 120%;
+    left: 14%;
+    z-index: 1;
+    transform: translate(50%, 50%);
+    border-radius: 70px;
+}
+
+.pc {
+    width: 100px;
+    position: absolute;
+    bottom: 134%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, 50%);
+}
+
+.commode {
+    width: 240px;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, 25%);
+}
+
+.lamp {
+    width: 110px;
+    position: absolute;
+    bottom: 110%;
+    right: 32%;
+    z-index: 1;
+    transform: translate(50%, 25%);
+}
+
+.pouf {
+    width: 120px;
+    position: absolute;
+    bottom: 25%;
+    right: 10%;
+    z-index: 1;
+    transform: translate(50%, 50%);
+}
+
+.siege {
+    width: 240px;
+    position: absolute;
+    bottom: 105%;
+    right: 12%;
+    z-index: 1;
+    transform: translate(50%, 25%);
+}
+
+.tapis {
+    position: absolute;
+    bottom: 10vh;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, 0);
+}
+
+
+
+/* Section Party */
+#party div{
+ background-color: palevioletred;
+ text-align: center;
+ width: 60vw;
+ padding: 20px;
+ margin: 3vh auto;
+ border-radius: 10px;
+}
+#party h2{
+    font-size: 3rem;
+    font-family: "Berkshire Swash", serif;
+    text-align: center;
+    margin: 15px;
+}
+#party p{ 
+    padding: 5px 0 20px;
+    font-family: "Delius", cursive;
+    font-size: 1.1rem;
+}
+.gateau{
+    position: absolute;
+    display: block;
+    width: 75vh;
+    bottom: 2vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.flamme{
+    position: absolute;
+    width: 20vh;
+    top: 36%;
+    left: 37.5%;
+    z-index: 2;
+    transform: translate(-37.5%, 50%);
+}
+
+.compteur{
+    display: none;
+}
+
+/* Animation Ballon */
+
+
+#balloon-container {
+    height: 100vh;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: opacity 500ms;
+    z-index: -1;
+}
+
+.balloon {
+    height: 125px;
+    width: 105px;
+    border-radius: 75% 75% 70% 70%;
+    position: relative;
+}
+
+.balloon:before {
+    content: "";
+    height: 75px;
+    width: 1px;
+    padding: 1px;
+    background-color: #FDFD96;
+    display: block;
+    position: absolute;
+    top: 125px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.balloon:after {
+    content: "▲";
+    text-align: center;
+    display: block;
+    position: absolute;
+    color: inherit;
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@keyframes float {
+    from {
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-300vh);
+        opacity: 0;
+    }
+}
