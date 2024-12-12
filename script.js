@@ -38,6 +38,7 @@ dance.addEventListener("click", function () {
     popupDance.style.display = "block"
     popupPc.style.display = "none"
     popupRubben.style.display = "none"
+    popupChat.style.display = "none"
 })
 
 // Pop-up Rubben
