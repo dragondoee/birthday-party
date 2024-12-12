@@ -2,6 +2,7 @@
 const pc = document.querySelector('.pc');
 const chat = document.querySelector('.chat');
 const rubben = document.querySelector('.rubben');
+const dance = document.querySelector('.affiche2');
 const boutonsFermer = document.querySelectorAll('.fermer');
 
 const flamme = document.querySelector('.flamme');
@@ -12,6 +13,7 @@ const compteur = document.querySelector('.compteur span');
 const popupPc = document.querySelector('.popup-pc');
 const popupChat = document.querySelector('.popup-chat');
 const popupRubben = document.querySelector('.popup-rubben');
+const popupDance = document.querySelector('.popup-dance');
 
 var index = 1
 
@@ -20,11 +22,20 @@ pc.addEventListener("click", function () {
     popupPc.style.display = "block"
     popupChat.style.display = "none"
     popupRubben.style.display = "none"
+    popupDance.style.display = "none"
 })
 
 // Pop-up Chat
 chat.addEventListener("click", function () {
     popupChat.style.display = "block"
+    popupPc.style.display = "none"
+    popupRubben.style.display = "none"
+    popupDance.style.display = "none"
+})
+
+// Pop-up Dance
+dance.addEventListener("click", function () {
+    popupDance.style.display = "block"
     popupPc.style.display = "none"
     popupRubben.style.display = "none"
 })
@@ -34,6 +45,7 @@ rubben.addEventListener("click", function () {
     popupRubben.style.display = "block"
     popupPc.style.display = "none"
     popupChat.style.display = "none"
+    popupDance.style.display = "none"
 })
 
 boutonsFermer.forEach(function (bouton) {
@@ -41,6 +53,7 @@ boutonsFermer.forEach(function (bouton) {
         popupPc.style.display = "none";
         popupChat.style.display = "none";
         popupRubben.style.display = "none";
+        popupDance.style.display = "none"
     });
 });
 

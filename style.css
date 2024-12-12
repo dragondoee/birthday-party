@@ -52,6 +52,9 @@ body {
     border-radius: 10px;
 }
 
+p{
+    font-family: "Delius", cursive;
+}
 
 /* Générale */
 
@@ -171,6 +174,11 @@ p {
     right: 12%;
     z-index: 1;
     transform: translate(-50%, 50%);
+    cursor: pointer;
+}
+
+.affiche2:hover {
+    width: 155px;
 }
 
 .lit {
@@ -440,6 +448,31 @@ p {
 
 .popup-chat video {
     width: 35vw;
+}
+
+/* ---------------------------------- Dance --------------------------------------- */
+.popup-dance {
+    display: none;
+}
+
+.popup-dance {
+    position: absolute;
+    display: none;
+    background-color: palevioletred;
+    border-radius: 10px;
+    padding: 30px 40px;
+    z-index: 4;
+    width: 20vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.popup-dance p{
+    margin: 10px 0;
+}
+
+.popup-dance video {
+    width: 20vw;
 }
 
 /* ---------------------------------- Ruben --------------------------------------- */
